@@ -133,6 +133,33 @@
     </div>
 </section>
 
+<!-- Inscription Section -->
+<section class="container-fluid dark page" id="inscription">
+    <div class="container">
+        <h1 class="card-title">Inscription</h1>
+
+        <iframe
+            class="card-body"
+            id="iframe_assoconnect"
+            src="https://openstreetmap.assoconnect.com/collect/description/225519-b-state-of-the-map-france-2022?iframe=1"
+            width="100%"
+            style="overflow: hidden; border: 0; max-height: none"
+            scrolling="no"
+        >
+        </iframe>
+        <script>
+            window.addEventListener("message", function (event) {
+                if (
+                    event.data.action === "iframe.height" &&
+                    event.origin === "https://openstreetmap.assoconnect.com"
+                ) {
+                    document.getElementById("iframe_assoconnect").height =
+                        event.data.height;
+                }
+            });
+        </script>
+    </div>
+</section>
 
 <!-- Footer -->
 <footer id="footer" class="home">

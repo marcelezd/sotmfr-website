@@ -208,7 +208,7 @@ footer img::-moz-selection,
 
 #footer.home {
     /* Todo: Modification temporaire en attendu d'avoir du contenu, à supprimer*/
-    background-color: var(--primary-light);
+    /* background-color: var(--primary-light); */
 }
 
 #footer a.light {
@@ -275,6 +275,27 @@ footer img::-moz-selection,
 
 .presentation .card-text {
     font-size: 1.5em;
+}
+
+/************************
+    Inscription
+************************/
+#inscription {
+    padding: 3em;
+    border-radius: 0;
+    text-align: center;
+}
+
+#iframe_assoconnect {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    border: 0;
+    max-height: none
+}
+
+.inscription-page {
+    padding: 6em 0 !important;
 }
 
 /************************
